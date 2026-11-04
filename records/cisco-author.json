@@ -1,0 +1,13 @@
+{
+  "name": "cisco.com/agents/email-agent",
+  "version": "1.0.0",
+  "schema_version": "1.1.0",
+  "description": "Drafts and routes email for Cisco teams.",
+  "authors": ["Cisco Systems Inc."],
+  "created_at": "2026-11-04T12:00:00Z",
+  "skills": [
+    {
+      "name": "ai_ml_engineering/llm_capabilities"
+    }
+  ]
+}
