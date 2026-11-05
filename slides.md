@@ -368,3 +368,37 @@ Directory may pull records announced by trusted peers automatically (aka _autosy
 # autosync (with policy)
 
 <img src="/autosync-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
+
+---
+
+# Use-case: reject insecure records
+
+If security scanners are enabled, policies can check scan results
+
+### Config
+
+The following policy only allows safe records:
+
+```yaml
+server:
+  policy:
+    evaluations:
+      - provider: cel
+        name: safe
+        expressions:
+          - 'meta.scan.is_safe'
+    operations:
+      - provider: cel
+        op: ["pull", "search"]
+        name: serve-safe-records
+        expressions:
+          - 'verdicts["cel:safe"].compliant_and_current'
+```
+
+---
+
+# scan demo
+
+<SlidevVideo controls class="mt-4 mx-auto max-h-72">
+  <source src="/scan-policy.mp4" type="video/mp4" />
+</SlidevVideo>
