@@ -1,0 +1,43 @@
+{
+  "name": "demo.local/owned-agent",
+  "schema_version": "1.0.0",
+  "version": "v1.0.0",
+  "description": "Record with an ownership claim.",
+  "authors": [
+    "Demo"
+  ],
+  "created_at": "2026-11-05T00:00:00Z",
+  "skills": [
+    {
+      "id": 10201,
+      "name": "natural_language_processing/natural_language_generation/text_completion"
+    }
+  ],
+  "annotations": {
+    "agntcy.dir/owner": "did:key:zDnaemPfZeEJgtnEMzmK7xEWTVYY9pLn6Ej3NCHRRSsCCJcKM"
+  },
+  "modules": [
+    {
+      "id": 10302,
+      "name": "core/language_model/agentskills",
+      "data": {
+        "skill_file": "SKILL.md",
+        "skill_manifest": {
+          "name": "owned-agent",
+          "version": "1.0.0",
+          "description": "Demo skill for a record with an ownership claim.",
+          "frontmatter_metadata": {
+            "author": "Demo",
+            "version": "1.0.0"
+          }
+        }
+      },
+      "artifact": {
+        "media_type": "application/agent-skills+md",
+        "digest": "sha256:3da8e501b5d9b635ddab304be692b0a421a1b9c40b14829afcdfc6201bef6d5d",
+        "size": 213,
+        "data": "LS0tCm5hbWU6IG93bmVkLWFnZW50CmRlc2NyaXB0aW9uOiBEZW1vIHNraWxsIGZvciBhIHJlY29yZCB3aXRoIGFuIG93bmVyc2hpcCBjbGFpbS4KbWV0YWRhdGE6CiAgYXV0aG9yOiBEZW1vCiAgdmVyc2lvbjogMS4wLjAKLS0tCgojIE93bmVkIGFnZW50CgpUaGlzIHNraWxsIGlzIGF0dGFjaGVkIHNvIHRoZSByZWNvcmQgY2FuIGFwcGVhciBpbiB0aGUgQUkgQ2F0YWxvZy4K"
+      }
+    }
+  ]
+}

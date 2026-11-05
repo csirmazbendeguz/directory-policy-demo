@@ -402,3 +402,33 @@ server:
 <SlidevVideo controls class="mt-4 mx-auto max-h-72">
   <source src="/scan-policy.mp4" type="video/mp4" />
 </SlidevVideo>
+
+---
+
+# Use-case: reject non-verified records
+
+The following policy only allows verified records:
+
+```yaml
+server:
+  policy:
+    evaluations:
+      - provider: cel
+        name: owned
+        expressions:
+          - 'meta.identity.owner.status == ClaimStatus.CLAIM_STATUS_VERIFIED'
+    operations:
+      - provider: cel
+        op: ["pull", "search"]
+        name: serve-owned-records
+        expressions:
+          - 'verdicts["cel:owned"].compliant_and_current'
+```
+
+---
+
+# verification demo
+
+<SlidevVideo controls class="mt-4 mx-auto max-h-72">
+  <source src="/owner-policy.mp4" type="video/mp4" />
+</SlidevVideo>
