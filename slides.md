@@ -138,9 +138,23 @@ server:
 
 ---
 
+# pull demo
+
 <SlidevVideo controls class="mt-4 mx-auto max-h-72">
   <source src="/pull-operation.mp4" type="video/mp4" />
 </SlidevVideo>
+
+---
+
+# search (without policies)
+
+<img src="/search-without-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" /> 
+
+---
+
+# search (with policies)
+
+<img src="/search-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" /> 
 
 ---
 
@@ -163,6 +177,8 @@ server:
 ```
 
 ---
+
+# search demo
 
 <SlidevVideo controls class="mt-4 mx-auto max-h-72">
   <source src="/search-operation.mp4" type="video/mp4" />
