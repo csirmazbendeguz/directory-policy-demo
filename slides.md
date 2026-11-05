@@ -318,3 +318,35 @@ For example, indexing is part of sync.
 # index (with policy)
 
 <img src="/index-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
+
+---
+
+# index config
+
+```yaml
+server:
+  policy:
+    operations:
+      - provider: cel
+        op: ["index"]
+        name: cisco-authored
+        expressions:
+          - 'has(record.authors)'
+          - 'record.authors.exists(a, a == "Cisco Systems Inc.")'
+```
+
+---
+
+# index demo
+
+<SlidevVideo controls class="mt-4 mx-auto max-h-72">
+  <source src="/index-operation.mp4" type="video/mp4" />
+</SlidevVideo>
+
+---
+
+# index limitation
+
+As of now, metadata is not available in indexing policies
+
+They can only read record data
