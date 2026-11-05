@@ -186,6 +186,18 @@ server:
 
 ---
 
+# push (without policies)
+
+<img src="/push-without-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
+
+---
+
+# push (with policies)
+
+<img src="/push-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
+
+---
+
 # push config
 
 ```yaml
@@ -201,6 +213,8 @@ server:
 ```
 
 ---
+
+# push demo
 
 <SlidevVideo controls class="mt-4 mx-auto max-h-72">
   <source src="/push-operation.mp4" type="video/mp4" />
