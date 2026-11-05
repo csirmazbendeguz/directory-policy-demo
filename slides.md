@@ -106,6 +106,18 @@ It's made of:
 
 ---
 
+# pull (without policies)
+
+<img src="/pull-without-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" /> 
+
+---
+
+# pull (with policies)
+
+<img src="/pull-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
+
+---
+
 # pull config
 
 ```yaml
