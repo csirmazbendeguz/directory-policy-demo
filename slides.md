@@ -273,6 +273,34 @@ server:
 
 ---
 
+# sync demo
+
 <SlidevVideo controls class="mt-4 mx-auto max-h-72">
   <source src="/sync-use-case.mp4" type="video/mp4" />
 </SlidevVideo>
+
+---
+
+# index
+
+Indexing is the process of loading the OCI registry data into the database
+
+For example, indexing is part of sync.
+
+1. 🔄 **sync** - Directory B syncs from Directory A:
+2. 🔁 **regsync** - sync the OCI registry
+3. 🗄️ **index** - load OCI registry to the database
+
+<img src="/sync-regsync-index.svg" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" /> 
+
+---
+
+# index (without policy)
+
+<img src="/index-without-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" /> 
+
+---
+
+# index (with policy)
+
+<img src="/index-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
