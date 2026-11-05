@@ -108,13 +108,13 @@ Note: operations don't have to use verdicts
 
 ---
 
-# pull (without policies)
+# pull (without policy)
 
 <img src="/pull-without-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" /> 
 
 ---
 
-# pull (with policies)
+# pull (with policy)
 
 <img src="/pull-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
 
@@ -148,13 +148,13 @@ server:
 
 ---
 
-# search (without policies)
+# search (without policy)
 
 <img src="/search-without-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" /> 
 
 ---
 
-# search (with policies)
+# search (with policy)
 
 <img src="/search-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" /> 
 
@@ -188,13 +188,13 @@ server:
 
 ---
 
-# push (without policies)
+# push (without policy)
 
 <img src="/push-without-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
 
 ---
 
-# push (with policies)
+# push (with policy)
 
 <img src="/push-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
 
@@ -350,3 +350,21 @@ server:
 As of now, metadata is not available in indexing policies
 
 They can only read record data, e.g. `authors` field
+
+---
+
+# autosync
+
+Directory may pull records announced by trusted peers automatically (aka _autosync_) 
+
+---
+
+# autosync (without policy)
+
+<img src="/autosync-without-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
+
+---
+
+# autosync (with policy)
+
+<img src="/autosync-with-policy.png" alt="Evaluations create verdicts, which operations use to allow or reject" class="mt-4 mx-auto max-h-100 rounded" />
