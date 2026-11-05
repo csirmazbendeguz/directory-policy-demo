@@ -349,4 +349,4 @@ server:
 
 As of now, metadata is not available in indexing policies
 
-They can only read record data
+They can only read record data, e.g. `authors` field
