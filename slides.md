@@ -88,6 +88,8 @@ It's made of:
 - ⚖️ **2. Verdicts** - stores evaluation results 
 - ⚙️ **3. Operations** - allow/reject an operation (may use verdicts)
 
+Note: operations don't have to use verdicts
+
 ---
 
 #
@@ -278,6 +280,18 @@ server:
 <SlidevVideo controls class="mt-4 mx-auto max-h-72">
   <source src="/sync-use-case.mp4" type="video/mp4" />
 </SlidevVideo>
+
+---
+
+# sync limitation
+
+NOTE: sync may synchronize ineligible records
+
+As of now, policies only **hide** ineligible records - not prevent them _entirely_ from syncing
+
+## Solution
+
+It's possible to prevent syncing ineligible records _partially_ - by defining **indexing** policies
 
 ---
 
